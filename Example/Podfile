@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YBScrollSuspendManage_Example' do
+  pod 'YBScrollSuspendManage', :path => '../'
+
+  target 'YBScrollSuspendManage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
