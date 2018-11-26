@@ -1,9 +1,9 @@
 {
   "name": "YBScrollSuspendManage",
   "version": "0.1.0",
-  "summary": "A short description of YBScrollSuspendManage.",
+  "summary": "页面嵌套滚动到l某个点悬停效果",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/380711712@qq.com/YBScrollSuspendManage",
+  "homepage": "https://github.com/ethanbing/YBScrollSuspendManage",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "380711712@qq.com": "380711712@qq.com"
   },
   "source": {
-    "git": "https://github.com/380711712@qq.com/YBScrollSuspendManage.git",
+    "git": "https://github.com/ethanbing/YBScrollSuspendManage.git",
     "tag": "0.1.0"
   },
   "platforms": {

@@ -10,7 +10,7 @@
 #import "YBookmarkView.h"
 #import "YBFirstViewController.h"
 #import "YBSecondViewController.h"
-#import "YBThirdViewController.h"
+#import "YBBaseCollectionController.h"
 #import "YBMoreViewController.h"
 #import "YBGridViewController.h"
 
@@ -81,8 +81,14 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     YBBaseTabelViewController * tabelViewController = [self.bookmarkView currentViewController];
-    //需要悬浮滚动的控制器
-    [self.suspendManage mainScrollViewDidScroll:scrollView subScrollView:tabelViewController.tableView forHeaderMaxY:200];
+    if ([tabelViewController isKindOfClass:YBBaseTabelViewController.class]) {
+        //需要悬浮滚动的控制器
+        [self.suspendManage mainScrollViewDidScroll:scrollView subScrollView:tabelViewController.tableView forHeaderMaxY:200];
+    }else if ([tabelViewController isKindOfClass:YBBaseCollectionController.class]){
+        YBBaseCollectionController * collectionVC = [self.bookmarkView currentViewController];
+        //需要悬浮滚动的控制器
+        [self.suspendManage mainScrollViewDidScroll:scrollView subScrollView:collectionVC.collectionView forHeaderMaxY:200];
+    }
 }
 
 #pragma mark - YBScrollSuspendManageDelegate
