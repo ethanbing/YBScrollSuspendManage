@@ -28,13 +28,13 @@
 {
     if (scrollView.contentOffset.y<=0) {
         //子视图的滚动已经到头了;父视图即将开始滚动
-
-        BOOL mainIsTop = YES;
-        if ([self.delegate respondsToSelector:@selector(mainScrollIsTopForScrollView:)]) {
-            mainIsTop = [self.delegate mainScrollIsTopForScrollView:scrollView];
+        if (![self.delegate respondsToSelector:@selector(mainScrollIsTopForScrollView:)]) {
+            NSLog(@"您必须在主控制器现实此代理方法 mainScrollIsTopForScrollView:");
+            return;
         }
         scrollView.yb_isCanScroll = YES;
-        if (!mainIsTop) {
+        BOOL outCanScroll = [self.delegate mainScrollIsTopForScrollView:scrollView];
+        if (outCanScroll) {
             [scrollView setContentOffset:CGPointZero];
         }
     }else{
