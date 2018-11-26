@@ -1,0 +1,23 @@
+PODS:
+  - YBookmarkView (0.1.0)
+  - YBScrollSuspendManage (0.1.0)
+
+DEPENDENCIES:
+  - YBookmarkView
+  - YBScrollSuspendManage (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YBookmarkView
+
+EXTERNAL SOURCES:
+  YBScrollSuspendManage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YBookmarkView: 8b22ee15045849f0cc58da71761c3c0e0f616caa
+  YBScrollSuspendManage: e7eb58a8a44fb9e77aeb650f4eddd6e38aa89351
+
+PODFILE CHECKSUM: c3205c2ec49e8de691e5f15b5ea0606158568b0f
+
+COCOAPODS: 1.5.3

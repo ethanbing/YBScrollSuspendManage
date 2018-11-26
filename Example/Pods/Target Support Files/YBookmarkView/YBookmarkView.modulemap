@@ -1,0 +1,6 @@
+framework module YBookmarkView {
+  umbrella header "YBookmarkView-umbrella.h"
+
+  export *
+  module * { export * }
+}

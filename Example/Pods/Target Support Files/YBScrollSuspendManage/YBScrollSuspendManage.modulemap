@@ -1,0 +1,6 @@
+framework module YBScrollSuspendManage {
+  umbrella header "YBScrollSuspendManage-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -23,6 +23,15 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		B9012A3821A9283E00AF2F75 /* YBBaseTabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9012A3721A9283E00AF2F75 /* YBBaseTabelViewController.m */; };
+		B9012A4121A9284800AF2F75 /* YBThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9012A3921A9284800AF2F75 /* YBThirdViewController.m */; };
+		B9012A4221A9284800AF2F75 /* YBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9012A3C21A9284800AF2F75 /* YBSecondViewController.m */; };
+		B9012A4321A9284800AF2F75 /* YBMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9012A3E21A9284800AF2F75 /* YBMoreViewController.m */; };
+		B9012A4421A9284800AF2F75 /* YBFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9012A3F21A9284800AF2F75 /* YBFirstViewController.m */; };
+		B9012A4621A92C8E00AF2F75 /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9012A4521A92C8E00AF2F75 /* car.jpg */; };
+		B9012A4921AB946100AF2F75 /* YBBaseCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9012A4821AB946100AF2F75 /* YBBaseCollectionController.m */; };
+		B9012A4D21AB975D00AF2F75 /* YBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9012A4C21AB975D00AF2F75 /* YBCollectionViewCell.m */; };
+		B9012A5021AB978D00AF2F75 /* YBGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9012A4F21AB978D00AF2F75 /* YBGridViewController.m */; };
 		E7C23B5E6FD72DB18D216E0B /* Pods_YBScrollSuspendManage_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3672516C047C046F2163A918 /* Pods_YBScrollSuspendManage_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,16 +66,33 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		62A3CC58BAFFC1313A9D2A40 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		62A3CC58BAFFC1313A9D2A40 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		69E06B304365AFAC1AACEE03 /* Pods_YBScrollSuspendManage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBScrollSuspendManage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		85398C51CE3A9BD8C273993E /* YBScrollSuspendManage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YBScrollSuspendManage.podspec; path = ../YBScrollSuspendManage.podspec; sourceTree = "<group>"; };
+		85398C51CE3A9BD8C273993E /* YBScrollSuspendManage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YBScrollSuspendManage.podspec; path = ../YBScrollSuspendManage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D2E022D7019394DD47FD11F /* Pods-YBScrollSuspendManage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBScrollSuspendManage_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBScrollSuspendManage_Example/Pods-YBScrollSuspendManage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ACE6A4CFCDA2E56EF994A59E /* Pods-YBScrollSuspendManage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBScrollSuspendManage_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBScrollSuspendManage_Tests/Pods-YBScrollSuspendManage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9012A3621A9283E00AF2F75 /* YBBaseTabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBBaseTabelViewController.h; sourceTree = "<group>"; };
+		B9012A3721A9283E00AF2F75 /* YBBaseTabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBBaseTabelViewController.m; sourceTree = "<group>"; };
+		B9012A3921A9284800AF2F75 /* YBThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBThirdViewController.m; sourceTree = "<group>"; };
+		B9012A3A21A9284800AF2F75 /* YBFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBFirstViewController.h; sourceTree = "<group>"; };
+		B9012A3B21A9284800AF2F75 /* YBMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBMoreViewController.h; sourceTree = "<group>"; };
+		B9012A3C21A9284800AF2F75 /* YBSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSecondViewController.m; sourceTree = "<group>"; };
+		B9012A3D21A9284800AF2F75 /* YBSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSecondViewController.h; sourceTree = "<group>"; };
+		B9012A3E21A9284800AF2F75 /* YBMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBMoreViewController.m; sourceTree = "<group>"; };
+		B9012A3F21A9284800AF2F75 /* YBFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBFirstViewController.m; sourceTree = "<group>"; };
+		B9012A4021A9284800AF2F75 /* YBThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBThirdViewController.h; sourceTree = "<group>"; };
+		B9012A4521A92C8E00AF2F75 /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
+		B9012A4721AB946100AF2F75 /* YBBaseCollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBBaseCollectionController.h; sourceTree = "<group>"; };
+		B9012A4821AB946100AF2F75 /* YBBaseCollectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBBaseCollectionController.m; sourceTree = "<group>"; };
+		B9012A4B21AB975D00AF2F75 /* YBCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBCollectionViewCell.h; sourceTree = "<group>"; };
+		B9012A4C21AB975D00AF2F75 /* YBCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBCollectionViewCell.m; sourceTree = "<group>"; };
+		B9012A4E21AB978D00AF2F75 /* YBGridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBGridViewController.h; sourceTree = "<group>"; };
+		B9012A4F21AB978D00AF2F75 /* YBGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBGridViewController.m; sourceTree = "<group>"; };
 		CA07634C2C773DA92D0CE3A3 /* Pods-YBScrollSuspendManage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBScrollSuspendManage_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBScrollSuspendManage_Tests/Pods-YBScrollSuspendManage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DC66C80F8E3FE8C4F2F04946 /* Pods-YBScrollSuspendManage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBScrollSuspendManage_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBScrollSuspendManage_Example/Pods-YBScrollSuspendManage_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E5727D04A151467772855414 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E5727D04A151467772855414 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +158,8 @@
 		6003F593195388D20070C39A /* Example for YBScrollSuspendManage */ = {
 			isa = PBXGroup;
 			children = (
+				B9012A3521A9283400AF2F75 /* SubViewController */,
+				B9012A3421A9282200AF2F75 /* BaseViewController */,
 				6003F59C195388D20070C39A /* YBAppDelegate.h */,
 				6003F59D195388D20070C39A /* YBAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -152,6 +180,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* YBScrollSuspendManage-Prefix.pch */,
+				B9012A4521A92C8E00AF2F75 /* car.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -183,6 +212,44 @@
 				62A3CC58BAFFC1313A9D2A40 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		B9012A3421A9282200AF2F75 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B9012A3621A9283E00AF2F75 /* YBBaseTabelViewController.h */,
+				B9012A3721A9283E00AF2F75 /* YBBaseTabelViewController.m */,
+				B9012A4721AB946100AF2F75 /* YBBaseCollectionController.h */,
+				B9012A4821AB946100AF2F75 /* YBBaseCollectionController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		B9012A3521A9283400AF2F75 /* SubViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B9012A4A21AB972E00AF2F75 /* Views */,
+				B9012A3A21A9284800AF2F75 /* YBFirstViewController.h */,
+				B9012A3F21A9284800AF2F75 /* YBFirstViewController.m */,
+				B9012A3B21A9284800AF2F75 /* YBMoreViewController.h */,
+				B9012A3E21A9284800AF2F75 /* YBMoreViewController.m */,
+				B9012A3D21A9284800AF2F75 /* YBSecondViewController.h */,
+				B9012A3C21A9284800AF2F75 /* YBSecondViewController.m */,
+				B9012A4021A9284800AF2F75 /* YBThirdViewController.h */,
+				B9012A3921A9284800AF2F75 /* YBThirdViewController.m */,
+				B9012A4E21AB978D00AF2F75 /* YBGridViewController.h */,
+				B9012A4F21AB978D00AF2F75 /* YBGridViewController.m */,
+			);
+			name = SubViewController;
+			sourceTree = "<group>";
+		};
+		B9012A4A21AB972E00AF2F75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9012A4B21AB975D00AF2F75 /* YBCollectionViewCell.h */,
+				B9012A4C21AB975D00AF2F75 /* YBCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FB2A90AE2270AB6DD62A5CFE /* Pods */ = {
@@ -247,6 +314,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "380711712@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = XQXQPB7PG5;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -276,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9012A4621A92C8E00AF2F75 /* car.jpg in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -348,12 +420,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YBScrollSuspendManage_Example/Pods-YBScrollSuspendManage_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/YBScrollSuspendManage/YBScrollSuspendManage.framework",
+				"${BUILT_PRODUCTS_DIR}/YBookmarkView/YBookmarkView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBScrollSuspendManage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBookmarkView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -367,9 +441,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9012A4321A9284800AF2F75 /* YBMoreViewController.m in Sources */,
+				B9012A4121A9284800AF2F75 /* YBThirdViewController.m in Sources */,
 				6003F59E195388D20070C39A /* YBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YBViewController.m in Sources */,
+				B9012A4921AB946100AF2F75 /* YBBaseCollectionController.m in Sources */,
+				B9012A4421A9284800AF2F75 /* YBFirstViewController.m in Sources */,
+				B9012A4221A9284800AF2F75 /* YBSecondViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				B9012A5021AB978D00AF2F75 /* YBGridViewController.m in Sources */,
+				B9012A3821A9283E00AF2F75 /* YBBaseTabelViewController.m in Sources */,
+				B9012A4D21AB975D00AF2F75 /* YBCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,12 +579,16 @@
 			baseConfigurationReference = DC66C80F8E3FE8C4F2F04946 /* Pods-YBScrollSuspendManage_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XQXQPB7PG5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YBScrollSuspendManage/YBScrollSuspendManage-Prefix.pch";
 				INFOPLIST_FILE = "YBScrollSuspendManage/YBScrollSuspendManage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YBScrollSuspendManage-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Gen_dev;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -512,12 +598,16 @@
 			baseConfigurationReference = 8D2E022D7019394DD47FD11F /* Pods-YBScrollSuspendManage_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YBScrollSuspendManage/YBScrollSuspendManage-Prefix.pch";
 				INFOPLIST_FILE = "YBScrollSuspendManage/YBScrollSuspendManage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YBScrollSuspendManage-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

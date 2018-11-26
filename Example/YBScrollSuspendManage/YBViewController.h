@@ -7,7 +7,10 @@
 //
 
 @import UIKit;
+#import "YBScrollSuspendManage.h"
 
-@interface YBViewController : UIViewController
+@interface YBViewController : UIViewController<YBScrollSuspendManageDelegate>
+
+@property (nonatomic, strong) YBScrollSuspendManage *suspendManage;
 
 @end
