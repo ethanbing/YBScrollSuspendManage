@@ -55,6 +55,7 @@
         {
             YBGridViewController * gridVC = [YBGridViewController new];
             gridVC.index = index+1;
+            //如果自视图可以滚动，必须传递给自视图
             gridVC.yb_suspendManage = self.suspendManage;
             return gridVC;
         }
@@ -70,6 +71,7 @@
         default:{
             YBFirstViewController * vc = [YBFirstViewController new];
             vc.index = index+1;
+            //如果自视图可以滚动，必须传递给自视图
             vc.yb_suspendManage = self.suspendManage;
             return vc;
         }
@@ -81,13 +83,14 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     YBBaseTabelViewController * tabelViewController = [self.bookmarkView currentViewController];
+    CGFloat headHeight = CGRectGetHeight(self.headerView.bounds);
     if ([tabelViewController isKindOfClass:YBBaseTabelViewController.class]) {
         //需要悬浮滚动的控制器
-        [self.suspendManage mainScrollViewDidScroll:scrollView subScrollView:tabelViewController.tableView forHeaderMaxY:200];
+        [self.suspendManage mainScrollViewDidScroll:scrollView subScrollView:tabelViewController.tableView forHeaderMaxY:headHeight];
     }else if ([tabelViewController isKindOfClass:YBBaseCollectionController.class]){
         YBBaseCollectionController * collectionVC = [self.bookmarkView currentViewController];
         //需要悬浮滚动的控制器
-        [self.suspendManage mainScrollViewDidScroll:scrollView subScrollView:collectionVC.collectionView forHeaderMaxY:200];
+        [self.suspendManage mainScrollViewDidScroll:scrollView subScrollView:collectionVC.collectionView forHeaderMaxY:headHeight];
     }
 }
 
@@ -106,10 +109,11 @@
 //子控制器需要下拉刷新 需要实现此代理方法
 - (BOOL)mainScrollIsTopForScrollView:(UIScrollView *)scrollView
 {
-    if (self.mainScrollView.contentOffset.y >= 0) {
-        return YES;
+    CGRect rect = [self.headerView convertRect:self.headerView.bounds toView:self.view];
+    if (rect.origin.y >= CGRectGetMinY(self.headerView.frame)) {
+        return NO;
     }
-    return NO;
+    return YES;
 }
 
 #pragma mark - YBookMarkViewDelegate
@@ -154,6 +158,8 @@
         _mainScrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
         _mainScrollView.delegate = self;
         _mainScrollView.bounces = NO;
+        _mainScrollView.showsVerticalScrollIndicator = NO;
+        _mainScrollView.showsHorizontalScrollIndicator = NO;
     }
     return _mainScrollView;
 }
